@@ -8,6 +8,7 @@ public class DriverManger {
         if (driver == null) {
             driver = new EdgeDriver();
             driver.manage().window().maximize();
+            driver.get("https://magento.softwaretestingboard.com/");
         }
         return driver;
 

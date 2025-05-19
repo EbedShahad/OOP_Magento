@@ -15,8 +15,8 @@ WebDriver driver;
 
 public void HomePage(){
     driver= DriverManger.getDriver();
-    driver.get("https://magento.softwaretestingboard.com/");
 }
+//String pageTitle = driver.getTitle();
     //Hot Sellers
     public List<WebElement> listProducts = driver.findElements(By.xpath("//ol//li"));
    public int productNumbers = listProducts.size();
