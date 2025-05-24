@@ -1,9 +1,7 @@
 package utils;
 
-import elemnts.link;
+import UiElements.link;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
 
 public class MainMenu {
     // hover on the top of the element

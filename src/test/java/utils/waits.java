@@ -1,4 +1,4 @@
-
+package utils;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.DriverManger;
 
 import java.time.Duration;
 
@@ -17,10 +16,10 @@ public class waits {
     WebDriver driver;
 
     public waits() {
-       this.driver= DriverManger.getDriver();
+       this.driver= driverMangement.getDriver("edge");
     }
 
-    public  WebElement waitForElementToBeVisible(By locator) {
+    public WebElement waitForElementToBeVisible(By locator) {
         return new WebDriverWait(driver, Duration.ofSeconds(DEFAULT_TIMEOUT))
                 .until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
