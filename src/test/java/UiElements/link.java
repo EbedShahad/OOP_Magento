@@ -1,9 +1,9 @@
-package elemnts;
+package UiElements;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
-import utils.DriverManger;
+import utils.driverMangement;
 
 public class link {
     WebDriver driver;
@@ -11,7 +11,7 @@ public class link {
     Actions actions ;
     public link(By locater) {
         this.locater = locater;
-        driver= DriverManger.getDriver();
+        driver= driverMangement.getDriver("edge");
         this.actions = new Actions(driver);
     }
 

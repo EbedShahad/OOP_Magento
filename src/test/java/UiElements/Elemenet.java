@@ -1,17 +1,16 @@
-package elemnts;
+package UiElements;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import utils.DriverManger;
+import utils.driverMangement;
 
 public class Elemenet {
     WebDriver driver;
     By locater;
 
-    public Elemenet(By locater) {
+    public Elemenet(By locater,WebDriver driver) {
         this.locater = locater;
-        this.driver = DriverManger.getDriver();
+        this.driver = driverMangement.getDriver("edge");
     }
 
     public boolean isDisplayed() {

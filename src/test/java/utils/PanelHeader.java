@@ -1,6 +1,6 @@
 package utils;
 
-import elemnts.link;
+import UiElements.link;
 import org.openqa.selenium.By;
 
 public class PanelHeader {

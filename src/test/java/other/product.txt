@@ -1,4 +1,4 @@
-package elemnts;
+package UiElements;
 
 import org.openqa.selenium.By;
 public class product {

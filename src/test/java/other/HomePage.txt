@@ -1,12 +1,12 @@
-package pages;
+package pagesParts;
 
-import elemnts.Button;
-import elemnts.link;
-import elemnts.product;
+import UiElements.Button;
+import UiElements.link;
+import UiElements.product;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utils.DriverManger;
+import utils.driverMangement;
 
 import java.util.List;
 public class HomePage {

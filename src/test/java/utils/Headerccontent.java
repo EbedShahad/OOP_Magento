@@ -1,7 +1,7 @@
 package utils;
 
-import elemnts.TextField;
-import elemnts.link;
+import UiElements.TextField;
+import UiElements.link;
 import org.openqa.selenium.By;
 
 public class Headerccontent {
