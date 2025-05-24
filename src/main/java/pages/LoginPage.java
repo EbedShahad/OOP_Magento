@@ -6,10 +6,9 @@ import UiElements.TextField;
 import UiElements.link;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.Test;
-import pagesParts.HeaderBar;
+
 import pagesParts.page;
-import utils.driverMangement;
+
 
 //web driver to parent
 //        web driver get his init ???
@@ -20,14 +19,14 @@ import utils.driverMangement;
 public class LoginPage extends page {
     WebDriver driver;
     //header and menu not now
-    HeaderBar header = new HeaderBar();
+
     //main content
     TextBox pageTitle = new TextBox(By.cssSelector(".base"));
     TextField email= new TextField(By.cssSelector("#email"));
     TextField password = new TextField(By.cssSelector(".main #pass"));
-    Button signIn = new Button(By.cssSelector(".main #send2"),driver);
+    Button signIn = new Button(By.cssSelector(".main #send2"));
     link forgetPassword = new link(By.cssSelector(".remind"));
-    Button createAccount = new Button(By.cssSelector(".create"),driver);
+    Button createAccount = new Button(By.cssSelector(".create"));
     // page
 
 

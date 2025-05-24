@@ -4,9 +4,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class driverMangement {
+public class DriverManager {
     public static WebDriver driver;
-    public static   WebDriver getDriver(String browser){
+   static  String browser="chrome";
+    public static   WebDriver getDriver(){
         if (driver == null) {
             switch (browser.toLowerCase()) {
                 case "chrome":
@@ -23,6 +24,7 @@ public class driverMangement {
             }
             driver.manage().window().maximize();
         }
+
         return driver;
 
     }

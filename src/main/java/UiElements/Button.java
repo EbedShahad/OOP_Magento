@@ -3,11 +3,10 @@ package UiElements;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class Button extends Elemenet {
-WebDriver driver;
-    By locater;
-    public Button(By locater,WebDriver driver) {
-        super(locater,driver);
+public class Button extends Element {
+
+    public Button(By locater ) {
+        super(locater);
 
     }
     public void click() {
