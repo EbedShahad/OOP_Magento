@@ -4,9 +4,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class driverMangement {
+public class driverManger {
     public static WebDriver driver;
-    public static   WebDriver getDriver(String browser){
+    public static String browser= "edge";
+    public static   WebDriver getDriver(){
         if (driver == null) {
             switch (browser.toLowerCase()) {
                 case "chrome":

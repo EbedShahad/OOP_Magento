@@ -1,25 +1,26 @@
-package pagesParts;
+package pages;
 
 import UiElements.Button;
+import UiElements.Label;
 import UiElements.link;
-import UiElements.product;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utils.driverMangement;
+import pagesParts.page;
+import utils.driverManger;
 
 import java.util.List;
-public class HomePage {
+public class HomePage extends page {
 WebDriver driver;
-    // get product numbers :
 
-public void HomePage(){
-    driver= DriverManger.getDriver();
-}
+//    public HomePage() {
+//        this.driver =driverManger.getDriver();
+//    }
+    // get product numbers :
 //String pageTitle = driver.getTitle();
     //Hot Sellers
-    public List<WebElement> listProducts = driver.findElements(By.xpath("//ol//li"));
-   public int productNumbers = listProducts.size();
+ //   public List<WebElement> listProducts = driver.findElements(By.xpath("//ol//li"));
+ //  public int productNumbers = listProducts.size();
     String bagName ="Fusion Backpack" ;
     public link productName = new link(By.xpath("//ol//img[@alt=\""+ bagName +"\"]/ancestor::a/following-sibling::div//*[@title=\""+ bagName +"\"]"));
     public link productPicture = new link(By.xpath("//ol//img[@alt=\"\""+ bagName +"\"\"]"));
@@ -29,6 +30,7 @@ public void HomePage(){
     public Button cart= new Button(By.xpath("//ol//img[@alt=\""+ bagName +"\"]/ancestor::a/following-sibling::div//*[@title=\"Add to Cart\"]"));
     public Button wishlist = new Button(By.xpath("//ol//img[@alt=\""+ bagName +"\"]/ancestor::a/following-sibling::div//*[@title=\"Add to Wish List\"]"));
     public Button addToComapre =new Button(By.xpath("//ol//img[@alt=\""+ bagName +"\"]/ancestor::a/following-sibling::div//*[@title=\"Add to Compare\"]"));
+    public Label welcome= new Label(By.xpath("//header//*[contains(text(),\"Welcome\")]"));
 
 
 }

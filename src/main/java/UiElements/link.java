@@ -3,16 +3,16 @@ package UiElements;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
-import utils.driverMangement;
+import utils.driverManger;
 
-public class link {
-    WebDriver driver;
-    By locater;
+
+public class link extends Elemenet{
+
+
     Actions actions ;
     public link(By locater) {
-        this.locater = locater;
-        driver= driverMangement.getDriver("edge");
-        this.actions = new Actions(driver);
+        super(locater);
+       // driver = driverManger.getDriver();
     }
 
     public void click(){

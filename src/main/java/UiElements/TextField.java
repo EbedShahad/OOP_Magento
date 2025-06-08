@@ -3,17 +3,17 @@ package UiElements;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import utils.driverMangement;
+import utils.driverManger;
 
 public class TextField {
 WebDriver driver;
 By locater;
     public TextField(By locater) {
-        driver= driverMangement.getDriver("edge");
+        driver= driverManger.getDriver();
         this.locater = locater;
     }
-    public void Write(){
-driver.findElement(locater).sendKeys();
+    public void Write(String sent){
+driver.findElement(locater).sendKeys(sent);
     }
     public String getText(){
        return driver.findElement(locater).getText();

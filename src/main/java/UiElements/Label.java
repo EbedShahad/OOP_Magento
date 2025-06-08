@@ -3,11 +3,12 @@ package UiElements;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class TextBox {
-    By locater;
+public class Label extends Elemenet {
+
     WebDriver driver;
-    public TextBox(By locater) {
-        this.locater =locater;
+    public Label(By locater) {
+        super(locater);
+
     }
 
     public String getText(){
