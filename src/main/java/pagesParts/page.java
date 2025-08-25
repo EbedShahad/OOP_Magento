@@ -19,4 +19,7 @@ public class page {
     public String getWindowTitle() {
         return driver.getTitle();
     }
+    public void goTO(String pageUrl) {
+        driver.navigate().to(pageUrl);
+    }
 }

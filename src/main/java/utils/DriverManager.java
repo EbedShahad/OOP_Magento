@@ -6,7 +6,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverManager {
     public static WebDriver driver;
-   static  String browser="chrome";
+   static  String browser="firefox";
     public static   WebDriver getDriver(){
         if (driver == null) {
             switch (browser.toLowerCase()) {
